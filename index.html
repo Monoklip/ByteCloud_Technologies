@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+        <div class="calculator-ranges">
+            <div class="calculator-ranges-Storage">
+                <div class="calculator-ranges-Storage-text">
+                    <p>Storage</p>
+                    <p class="storage-number"></p>
+                </div>
+                <div class="calculator-ranges-Storage-range">
+                    <input class="input" type="range" id="inputStorage" min="0" max="1000" value="75">
+                </div>
+            </div>
+            <div class="calculator-ranges-Transfer">
+                <div class="calculator-ranges-Transfer-text">
+                    <p>Transfer</p>
+                    <p class="transfer-number"></p>
+                </div>
+                <div class="calculator-ranges-Transfer-range">
+                    <input class="input" type="range" id="inputTransfer" min="0" max="1000" value="400">
+                </div>
+            </div>
+        </div>
+        <div class="calculator-graphics">
+            <div class="calculator-graphics-provider">
+                <div class="calculator-graphics-provider-text">
+                    <div class="calculator-graphics-provider-text-name">backblaze</div>
+                </div>
+                <div class="calculator-graphics-provider-backblaze"></div>
+                <p class="backblaze_p"></p>
+            </div>
+            <div class="calculator-graphics-provider">
+                <div class="calculator-graphics-provider-text">
+                    <div class="calculator-graphics-provider-text-name">bunny</div>
+                    <div class="calculator-graphics-provider-text-radio">
+                        <input class="bunny-radio1" type="radio" name="bunny">HDD
+                        <input class="bunny-radio2" type="radio" name="bunny">SSD
+                    </div>
+                </div>
+                <div class="calculator-graphics-provider-bunny"></div>
+                <p class="bunny_p"></p>
+            </div>
+            <div class="calculator-graphics-provider">
+                <div class="calculator-graphics-provider-text">
+                    <div class="calculator-graphics-provider-text-name">scaleway</div>
+                    <div class="calculator-graphics-provider-text-radio">
+                        <input class="scaleway-radio1" type="radio" name="scaleway">Multi
+                        <input class="scaleway-radio2" type="radio" name="scaleway">Single
+                    </div>
+                </div>
+                <div class="calculator-graphics-provider-scaleway"></div>
+                <p class="scaleway_p"></p>
+            </div>
+            <div class="calculator-graphics-provider">
+                <div class="calculator-graphics-provider-text">
+                    <div class="calculator-graphics-provider-text-name">vultr</div>
+                </div>
+                <div class="calculator-graphics-provider-vultr"></div>
+                <p class="vultr_p"></p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
