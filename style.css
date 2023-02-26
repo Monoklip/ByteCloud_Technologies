@@ -1,0 +1,147 @@
+.calculator {
+    width: 500px;
+    height: 300px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 100px auto;
+}
+
+.calculator-ranges {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calculator-ranges-Storage-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calculator-ranges-Transfer-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    width: 200px;
+}
+
+.backblaze_p,
+.bunny_p,
+.scaleway_p,
+.vultr_p {
+    margin-left: 10px;
+}
+
+.calculator-graphics {
+    width: 100%;
+}
+
+.calculator-graphics-provider {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+.calculator-graphics-provider-text {
+    width: 30%;
+}
+
+.calculator-graphics-provider-text-radio {
+    color: green;
+    font-size: 12px;
+}
+
+.calculator-graphics-provider-backblaze {
+    height: 20px;
+    margin-left: 10px;
+    background: grey;
+    border-radius: 5px;
+}
+
+.calculator-graphics-provider-bunny {
+    height: 20px;
+    margin-left: 10px;
+    background: grey;
+    border-radius: 5px;
+}
+
+.calculator-graphics-provider-scaleway {
+    height: 20px;
+    margin-left: 10px;
+    background: grey;
+    border-radius: 5px;
+}
+
+.calculator-graphics-provider-vultr {
+    height: 20px;
+    margin-left: 10px;
+    background: grey;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 550px) {
+    .input {
+        width: 100%;
+    }
+
+    .calculator {
+        width: 300px;
+        height: 530px;
+    }
+
+    .calculator-ranges {
+        width: 250px;
+        display: block;
+        position: absolute;
+        margin-top: 340px;
+    }
+
+    .calculator-graphics {
+        width: 130%;
+        transform: rotate(270deg);
+        margin: 50px 0px 0px -40px;
+        position: relative;
+    }
+
+    .calculator-graphics-provider {
+        height: 60px;
+        margin: 0;
+        border: none;
+    }
+
+    .backblaze_p,
+    .vultr_p,
+    .scaleway_p,
+    .bunny_p {
+        transform: rotate(90deg);
+        margin: 0;
+    }
+
+    .calculator-graphics-provider-text {
+        transform: rotate(90deg);
+        width: 16%;
+        text-align: center;
+    }
+
+    .calculator-graphics-provider-text-radio {
+        font-size: 12px;
+    }
+
+    .scaleway-radio1,
+    .scaleway-radio2,
+    .bunny-radio1,
+    .bunny-radio2 {
+        width: 10px;
+        height: 10px;
+    }
+}
